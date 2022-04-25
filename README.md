@@ -1,6 +1,10 @@
 ## Purpose
 Library to store misscellaneous code throughout the learning journey
 
+### Git get new/most up-todate dirctory:
+    Git clone HTTPS_ADDRESS_FROM_GITHUB
+    Git pull HTTPS_ADDRESS_FROM_GITHUB
+
 ### Git update process
     Git status
     Git add file_name
