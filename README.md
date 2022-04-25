@@ -13,7 +13,9 @@ Library to misscellaneous code throughout the learning journey
     cd some_folder_dir
     cd .. 
 
-Git freq commands:
+### Git freq commands:
 
     git branch
 
+### Markdown syntax reference: 
+https://markdown-it.github.io/
