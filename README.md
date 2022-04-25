@@ -17,6 +17,11 @@ Library to store misscellaneous code throughout the learning journey
 ### Git freq commands:
 
     git branch
+    git add -A #add all changes
+    git add -u #add only mods & deletes, EXCLUDE new files
 
 ### Markdown syntax reference: 
 https://markdown-it.github.io/
+
+### Markdown preview in VS code:
+    Ctrl+shift+V
