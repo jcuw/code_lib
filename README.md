@@ -1,2 +1,3 @@
 # code_lib
-miscellaneous code library
+## Purpose
+Library for misscellaneous code throughout the learning journey
