@@ -1,5 +1,5 @@
 ## Purpose
-Library to misscellaneous code throughout the learning journey
+Library to store misscellaneous code throughout the learning journey
 
 ### Git update process
     Git status
@@ -12,6 +12,7 @@ Library to misscellaneous code throughout the learning journey
     cls
     cd some_folder_dir
     cd .. 
+    dir
 
 ### Git freq commands:
 
