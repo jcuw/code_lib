@@ -15,8 +15,9 @@ Library to store misscellaneous code throughout the learning journey
 
     cls
     cd some_folder_dir
-    cd .. 
+    cd .. #move up a folder
     dir
+    del .\.git\index.lock #kill git process 
 
 ### Git freq commands:
 
