@@ -24,7 +24,7 @@ Library to store misscellaneous code throughout the learning journey
     git branch
     git add -A #add all changes
     git add -u #add only mods & deletes, EXCLUDE new files
-    git mv old_fileName new_fileName
+    git mv old_fileName new_fileName #rename existing file
 
 ### Markdown syntax reference: 
 https://markdown-it.github.io/

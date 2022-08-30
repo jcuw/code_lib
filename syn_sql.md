@@ -119,3 +119,66 @@ SELECT employee_id,
 FROM Employees
 ORDER BY employee_id
 ```
+# [1853\. Convert Date Format](https://leetcode.com/problems/convert-date-format/)
+```
+Write an SQL query to convert each date in `Days` into a string formatted as `"day_name, month_name day, year"`.
+
+Return the result table in **any order**.
+
+Input: 
+Days table:
++------------+
+| day        |
++------------+
+| 2022-04-12 |
+| 2021-08-09 |
+| 2020-06-26 |
++------------+
+Output: 
++-------------------------+
+| day                     |
++-------------------------+
+| Tuesday, April 12, 2022 |
+| Monday, August 9, 2021  |
+| Friday, June 26, 2020   |
++-------------------------+
+Explanation: Please note that the output is case-sensitive.
+```
+## Solution
+```mysql
+SELECT
+CONCAT(DAYNAME(day),", ",MONTHNAME(day)," ",day(day),", ",year(day)) as day
+FROM days
+ ```
+- `CONCAT(a,b,c,...)` joins stings 
+- `DAYNAME()` get name of the week
+- `MONTHNAME()` get name of the month
+
+# [196\. Remove duplicate via DELETE ](https://leetcode.com/problems/delete-duplicate-emails/submissions/)
+```
+Write an SQL query to **delete** all the duplicate emails, keeping only one unique email with the smallest `id`. 
+
+Note that you are supposed to write a `DELETE` statement and not a `SELECT` one.
++----+------------------+
+| id | email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Output: 
++----+------------------+
+| id | email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+Explanation: john@example.com is repeated two times. We keep the row with the smallest Id = 1.
+```
+
+## Solution
+```mysql
+DELETE P2
+FROM Person p1, Person P2
+WHERE P1.email = p2.email and p1.id<p2.id
+```
